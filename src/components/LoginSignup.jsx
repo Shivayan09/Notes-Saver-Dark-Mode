@@ -14,7 +14,7 @@ const LoginSignup = () => {
     const navigate = useNavigate()
 
     function handleSubmit() {
-        if (!username) return setError('Please enter username');
+        if (action==="Sign Up" && !username) return setError('Please enter username');
         if (!email) return setError('Please enter email');
         if (!password) return setError('Please enter password');
         setError('');
