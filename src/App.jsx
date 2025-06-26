@@ -5,11 +5,12 @@ import Navbar from './components/Navbar'
 import Paste from './components/Paste'
 import ViewPaste from './components/ViewPaste'
 import Home from './components/Home'
+import LoginSignup from './components/LoginSignup'
 
 const router = createBrowserRouter(
   [
     {
-      path: '/',
+      path: '/main',
       element:
       <div>
         <Navbar></Navbar>
@@ -30,6 +31,13 @@ const router = createBrowserRouter(
       <div>
         <Navbar></Navbar>
         <ViewPaste></ViewPaste>
+      </div>
+    },
+    {
+      path: '/',
+      element:
+      <div>
+        <LoginSignup></LoginSignup>
       </div>
     },
   ]
