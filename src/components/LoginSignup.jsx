@@ -31,7 +31,7 @@ const LoginSignup = () => {
                     <img src={user_icon} alt="" className='h-10 w-10 border border-gray-800 rounded-full hover:cursor-pointer' />
                 </div>
             </div>
-            <div className='box h-[75%] w-[70%] md:w-[30%] shadow-2xl rounded-4xl bg-white'>
+            <div className='box h-[75%] w-[80%] md:w-[30%] shadow-2xl rounded-4xl bg-white'>
                 <div className='header rounded-2xl text-black flex justify-center p-5'>
                     <div className='text-cyan-700 font-bold text-[1.5rem] text-center border-b-2 w-30 max-h-fit'>{action}</div>
                 </div>
@@ -57,7 +57,7 @@ const LoginSignup = () => {
                     <div className={`w-32 h-10 rounded-2xl flex items-center justify-center hover:cursor-pointer shadow-xl ${action === "Sign Up" ? "bg-gray-400" : "bg-cyan-600"}`} onClick={() => { setAction("Login") }}>Login</div>
                 </div>
                 <div className="submit flex items-center justify-center mt-3">
-                    <div className='h-9 w-80 shadow-2xl border border-cyan-500 text-black hover:cursor-pointer flex items-center justify-center rounded-2xl' onClick={handleSubmit}>Submit data</div>
+                    <div className='h-9 w-40 md:w-60 shadow-2xl border border-cyan-500 text-black hover:cursor-pointer flex items-center justify-center rounded-2xl' onClick={handleSubmit}>Submit data</div>
                 </div>
             </div>
         </div>
